@@ -1,0 +1,215 @@
+body {
+    background-color: #F4F0F0;
+    font-family:'Poppins', sans-serif;
+    overflow:hidden;
+}
+
+.image_center{
+    display: block;
+    margin: auto;
+}
+
+.absolute_center{
+    position: absolute; 
+  left: 0; 
+  right: 0; 
+  bottom: 0px;
+  margin-left: auto; 
+  margin-right: auto; 
+  margin-bottom: 20px;
+  width: 200px;
+}
+
+.quadrant_one{
+    margin-left: 19.25%;
+}
+
+.quadrant_two{
+    margin-left: 19.25%;
+}
+
+.quadrant_three{
+    margin-left: 19.25%;
+}
+
+.quadrant_four{
+    margin-left: 19.25%;
+}
+
+.margin_button{
+    margin-left:30%;
+}
+
+.sixty{
+    width:60%;
+    height:60%;
+}
+
+.forty{
+    width:40%;
+    height:40%;
+}
+
+.thirty{
+    width:30%;
+    height:30%;
+}
+
+.twenty{
+    width:20%;
+    height:20%;
+}
+
+.fifteen{
+    width:15%;
+    height:15%;
+}
+
+.ten{
+    width:10%;
+    height:10%;
+}
+
+.two{
+    width:2%;
+    height:2%;
+}
+
+.three_hundred_px{
+    width:300px;
+    height:300px;
+}
+
+.fade_in_up{
+    animation: fadeIn 1s forwards;
+}
+
+.fade_in_up_slow{
+    animation: fadeIn 5s forwards;
+}
+
+.shake{
+    animation: shake 5s infinite;
+}
+
+.imgButton{
+    transform: translate(0,0);
+}
+
+.imgButton:hover{
+    cursor:pointer;
+    animation: darken 1s forwards;
+}
+
+button{
+    color:#F4F0F0;
+    background-color:#FFA887;
+    width:300px; height:60px;
+
+    padding: 8px 22px;
+    border-radius: 30px;
+    border-width:0px;
+
+    font-size:20px;
+    font-family: inherit;
+    letter-spacing:8px;
+}
+
+button:hover{
+    cursor:pointer;
+    transform: scale(98%, 98%) forwards;
+    animation: orangeToWhite 0.5s forwards;
+}
+
+.glassButton {
+    border: 3px solid #FFA887;
+    color:#FFA887;
+    background-color:#F4F0F0;
+}
+
+#age{
+    background-color:#CDCDCD;
+    color:#F4F0F0;
+    height:100px;
+    font-size:28pt;
+    font-family:'Poppins', sans-serif;
+    border-radius:25px;
+    border-width:0;
+    text-align:center;
+}
+
+.option{
+    font-size:22pt;
+    color:#DDC0B5;
+}
+
+.slider{
+    -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 35%; /* Full-width */
+  height: 25px; /* Specified height */
+  background: #CDCDCD; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+.slider:hover{
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    border-radius: 50%;
+    background: #E8ACAC; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+
+@keyframes fadeIn {
+    0% { 
+        opacity: 0; 
+        transform: translate(0,5px);
+    }
+    100% { 
+        opacity: 1; 
+        transform: translate(0,0px);
+    }
+  }
+
+@keyframes orangeToWhite{
+    0%{
+        color:#F4F0F0;
+    background-color:#FFA887;
+    }
+    100%{
+        background-color:#e7e7e7;
+    color:#FFA887;
+    }
+}
+
+@keyframes darken{
+    0%{
+        filter:brightness(100%);
+    }
+    100%{
+        filter:brightness(80%);
+    }
+}
+
+@keyframes shake {
+    0% { transform: translate(5px, 15px) rotate(0deg); }
+    10% { transform: translate(-1px, -5px) rotate(-2deg); }
+    20% { transform: translate(-3px, 0px) rotate(2deg); }
+    30% { transform: translate(5px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(2deg); }
+    50% { transform: translate(-3px, 4px) rotate(-2deg); }
+    60% { transform: translate(-3px, 5px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-2deg); }
+    80% { transform: translate(-2px, -6px) rotate(2deg); }
+    90% { transform: translate(0px, 5px) rotate(0deg); }
+    100% { transform: translate(5px, 15px) rotate(-2deg); }
+  }
