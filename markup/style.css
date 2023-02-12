@@ -2,6 +2,8 @@ body {
     background-color: #F4F0F0;
     font-family:'Poppins', sans-serif;
     overflow:hidden;
+    
+    cursor: url("../assets/icons/cursor.png");
 }
 
 .image_center{
